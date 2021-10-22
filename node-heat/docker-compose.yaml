@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: nlw-messages-microsservice
+    entrypoint: ./.docker/entrypoint.sh
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 4000:4000
+    extra_hosts:
+      - 'host.docker.internal:172.17.0.1'

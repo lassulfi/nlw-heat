@@ -1,0 +1,26 @@
+POST http://localhost:4000/authenticate
+Content-Type: application/json
+
+{
+    "code": "70e742cf42491287c274"
+}
+
+###
+POST http://localhost:4000/messages
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJMdWlzIERhbmllbCBBc3N1bGZpIiwiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8yNjIzNzIzMz92PTQiLCJpZCI6ImRhNjE2OGNmLWI4YmMtNGI4ZS1iM2Q5LTI0ODM0NDNhNTNkYSJ9LCJpYXQiOjE2MzQ4NTg0NjAsImV4cCI6MTYzNDk0NDg2MCwic3ViIjoiZGE2MTY4Y2YtYjhiYy00YjhlLWIzZDktMjQ4MzQ0M2E1M2RhIn0.0YRkpkRePWT6dV1SGjU_85fm53ub-Iz8UYvMceu0uls
+
+{
+    "message": "Muito ansioso pelo DO/WHILE!"
+}
+
+###
+
+GET http://localhost:4000/messages/last-three
+Accept: application/json
+
+###
+
+GET http://localhost:4000/profile
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJMdWlzIERhbmllbCBBc3N1bGZpIiwiYXZhdGFyX3VybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS8yNjIzNzIzMz92PTQiLCJpZCI6ImRhNjE2OGNmLWI4YmMtNGI4ZS1iM2Q5LTI0ODM0NDNhNTNkYSJ9LCJpYXQiOjE2MzQ4NTg0NjAsImV4cCI6MTYzNDk0NDg2MCwic3ViIjoiZGE2MTY4Y2YtYjhiYy00YjhlLWIzZDktMjQ4MzQ0M2E1M2RhIn0.0YRkpkRePWT6dV1SGjU_85fm53ub-Iz8UYvMceu0uls

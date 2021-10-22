@@ -1,0 +1,10 @@
+node_modules/
+# Keep environment variables out of version control
+.env
+
+# In-memory db
+prisma/*.db
+prisma/*.db-journal
+
+#Logs
+*.log
